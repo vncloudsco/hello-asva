@@ -6,6 +6,18 @@ Code Hello-Meeyland
     + Chạy: npm install
             npm run start
 
+    API lấy danh sách yêu cầu:
+        uri: http://localhost:5000/meeyland/v1.0/request 
+        giao thức: get
+        res.params :        KEY                                 VALUE
+                        createdAt_start                 2021-08-10T15:13:22.000Z
+                        createdAt_end                   2021-08-12T15:13:22.000Z
+                        viewAt_start                    2021-08-12T01:13:22.000Z
+                        viewAt_end                      2021-08-12T15:53:22.000Z
+                        sender_phone                    3333
+                        title                           Bán chung cư
+                        crawl                           true
+
     API tạo mới: 
         uri: http://localhost:5000/meeyland/v1.0/request 
         giao thức: post
