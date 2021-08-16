@@ -8,7 +8,6 @@ class MidCategory {
     async getListCategory({ page, size, type}) {
         let paging = Paging(page, size)
         let song = await Category.find();
-        console.log("11111111111111111111111111111111", song)
         return song
     }
 
