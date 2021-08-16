@@ -194,7 +194,6 @@ class SamplePage extends React.Component {
   render() {
     let { sortedInfo, filteredInfo, list_post, type, paginationInfo, showModal, request_id } = this.state;
     let { intl } = this.props;
-    // console.log("111111111111111111111111111111111111111", request_id)
 
     sortedInfo = sortedInfo || {};
     filteredInfo = filteredInfo || {};
