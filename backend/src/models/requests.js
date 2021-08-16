@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const requestsSchema = new Schema({
-    receiveUserId: [{ type: Schema.Types.ObjectId, ref: 'New' }],
+    receiveUserId: { type: Schema.Types.ObjectId, ref: 'New' },
     senderName: { type: String, required: true },
     senderEmail: { type: String, required: true },
     senderPhone: { type: String, required: true },

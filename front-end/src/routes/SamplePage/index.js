@@ -290,8 +290,8 @@ class SamplePage extends React.Component {
       },
       {
         title: "Người đăng tin",
-        dataIndex: 'receiveUserId[0].creator',
-        key: "receiveUserId[0].creator",
+        dataIndex: 'receiveUserId.creator',
+        key: "receiveUserId.creator",
         render: (value, record, index) => {
           if (value) {
             return <div>
@@ -304,13 +304,13 @@ class SamplePage extends React.Component {
       },
       {
         title: "Mã đăng tin",
-        dataIndex: 'receiveUserId[0].code',
-        key: "receiveUserId[0].code",
+        dataIndex: 'receiveUserId.code',
+        key: "receiveUserId.code",
       },
       {
         title: "Loại tin",
-        dataIndex: 'receiveUserId[0].crawl',
-        key: "receiveUserId[0].crawl",
+        dataIndex: 'receiveUserId.crawl',
+        key: "receiveUserId.crawl",
         // filterMultiple: false,
         // filters: [
         //   { text: <T id="table.actived" />, value: true },
@@ -327,8 +327,8 @@ class SamplePage extends React.Component {
       {
         title: "Tiêu đề tin",
         // align: 'center',
-        dataIndex: 'receiveUserId[0].title',
-        key: "receiveUserId[0].title",
+        dataIndex: 'receiveUserId.title',
+        key: "receiveUserId.title",
         // ...this.getColumnSearchProps('Tìm Tác Giả'),
       },
       {

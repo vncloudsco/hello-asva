@@ -8,8 +8,8 @@ const newsSchema = new Schema({
   content: { type: String },
   code: { type: String, required: true },
   crawl: { type: Boolean, required: true, default: false },
-  creator: [{ type: Schema.Types.ObjectId, ref: 'User' }],
-  category: [{ type: Schema.Types.ObjectId, ref: 'Category' }]
+  creator: { type: Schema.Types.ObjectId, ref: 'User' },
+  category: { type: Schema.Types.ObjectId, ref: 'Category' }
 }, {
   timestamps: true,
 });
